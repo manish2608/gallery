@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Gallery</h1>
+    </nav>
+    <div class="full-img" id="fullImgbox">
+        <img src="images/manish.jpg" alt="" id="fullimg">
+        <span onclick="closeFullimg()">X</span>
+    </div>
+    <div class="gallery">
+
+        <img src="images/pexels1.jpeg" alt="" onclick="openFullimg(this.src)">
+        <img src=" images/pexels2.jpeg " alt=" " onclick="openFullimg(this.src)">
+        <img src="images/pexels3.jpeg" alt="" onclick="openFullimg(this.src)">
+        <img src=" images/pexels4.jpeg " alt=" " onclick="openFullimg(this.src)">
+        <img src="images/pexels5.jpeg" alt="" onclick="openFullimg(this.src)">
+        <img src=" images/pexels6.jpeg " alt=" " onclick="openFullimg(this.src)">
+        <img src="images/pexels7.jpeg" alt="" onclick="openFullimg(this.src)">
+        <img src=" images/pexels8.jpeg " alt=" " onclick="openFullimg(this.src)">
+        <img src="images/pexels9.jpeg" alt="" onclick="openFullimg(this.src)">
+        <img src="images/pexels10.jpeg" alt="" onclick="openFullimg(this.src)">
+        <img src="images/pexels11.jpeg" alt="" onclick="openFullimg(this.src)">
+
+    </div>
+    <script>
+        var fullImgbox = document.getElementById('fullImgbox');
+        var fullImg = document.getElementById('fullimg');
+
+        function openFullimg(pic) {
+            fullImgbox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullimg() {
+            fullImgbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
